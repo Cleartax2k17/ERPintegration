@@ -1,0 +1,47 @@
+Request:
+
+Attributes
+Object
+- email : string (Email ID of the user)
+- password: string (Password of the user)
+Content-Type: application/json
+Accept: application/json
+X-Cleartax-Api-Auth-Token: <your-erp-token>
+
+
+Response
+Attributes
+Object
+- email : string (Email ID of the registered user)
+- product_type: string(enum) [PRO/BIZ] (Type of account (CA/Business))
+- api_token: string (API Token for the signed up user)
+- businesses: array
+- Object
+- id: string (unique identifier of the created business)
+- name: string (Name of the created business)
+- panNumber: string (Pan Number of the created business)
+- taxableEntityResponses: array
+- Object
+- taxableEntityId: string (unique identifier of the created GSTIN)
+- gstin: string (GSTIN no. of the created GSTIN)
+- provisionalGstin: string (used for internal purposes)
+- state: string (used for internal purposes)
+- name: string (Name of the created GSTIN)
+- businessNature: string (used for internal purposes)
+- branchType: string (used for internal purposes)
+- businessId: string (used for internal purposes)
+- totalSales: string (used for internal purposes)
+- totalPurchases: string (used for internal purposes)
+- ownerBusinessId: string (used for internal purposes)
+- ownerAccountId: string (used for internal purposes)
+- createdAt: string (used for internal purposes)
+- updatedAt: string (used for internal purposes)
+- gstnUserName: string (used for internal purposes)
+- demo: bool (true/false) (used for internal purposes)
+- logo: string (used for internal purposes)
+- ownerAccountId: string (used for internal purposes)
+- clientEmail: string (used for internal purposes)
+- clientName: string (used for internal purposes)
+- clientState: string (used for internal purposes)
+- invitationToken: string (used for internal purposes)
+- demo: bool (true/false) (used for internal purposes)
