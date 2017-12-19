@@ -9,7 +9,8 @@ Accept: application/json
 X-Cleartax-Api-Auth-Token: <your-erp-token>
 
 
-Response
+Response:
+
 Attributes
 Object
 - email : string (Email ID of the registered user)
